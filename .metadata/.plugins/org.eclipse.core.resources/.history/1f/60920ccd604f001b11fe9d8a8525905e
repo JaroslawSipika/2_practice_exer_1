@@ -1,0 +1,38 @@
+class ProstyPortal {
+	int [] polePolozenia;
+	int iloscTrafien;
+	
+	public void setPolaPolozenia (int[] ppol) {
+		polePolozenia = ppol;
+	}
+	
+	public String sprawdz(String stringPole) {
+		int strzal = Integer.parseInt(stringPole);
+		String wynik = "pud³o";
+		for (int pole : polePolozenia) {
+			if (strzal == pole) {
+				wynik = "trafiony";
+				iloscTrafien++;
+				break;
+			}
+		}
+		if (iloscTrafien == polePolozenia.length) {
+			wynik = "zatopiony";
+		}
+		System.out.println(wynik);
+		return wynik;
+	}	
+}
+
+public class ProstyPortalTester {
+
+	public static void main(String[] args) {
+		ProstyPortal wit = new ProstyPortal();
+		int [] polozenia = {2, 3, 4};
+		wit.setPolaPolozenia(polozenia);
+		String wybranePole = "2";
+		String wynik = wit.sprawdz(wybranePole);
+
+	}
+
+}

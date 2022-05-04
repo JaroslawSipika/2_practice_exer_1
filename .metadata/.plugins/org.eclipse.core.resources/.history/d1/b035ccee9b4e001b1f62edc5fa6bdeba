@@ -1,0 +1,15 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+	//	int x = 34.5;
+	//	boolean boo = x;
+		int g = 17;
+		int y = g;
+		y = y + 10;
+		short s;
+		s = y;
+		
+	}
+
+}

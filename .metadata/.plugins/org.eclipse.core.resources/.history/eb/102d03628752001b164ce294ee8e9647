@@ -1,0 +1,22 @@
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.MidiUnavailableException;
+import javax.sound.midi.Sequencer;
+
+public class MuzaTester1 {
+
+	public void graj() {
+		try {
+			Sequencer sekwenser = MidiSystem.getSequencer();
+		} catch (MidiUnavailableException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Mamy sekwenser!");
+	}
+	
+	public static void main(String[] args) {
+		MuzaTester1 mt = new MuzaTester1();
+		
+		mt.graj();
+		}
+}

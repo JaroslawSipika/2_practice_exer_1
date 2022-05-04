@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+class Pies{
+	int rasa;
+	
+	
+}
+
+
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Pies> mojaListaPsow = new ArrayList<Pies>();
+		Pies mojPies = new Pies();
+		mojaListaPsow.add(mojPies);
+		Pies p = mojaListaPsow.get(0);
+		
+		System.out.println(p.getClass());
+		
+		
+		ArrayList<Object> mojaListaPsow2 = new ArrayList<Object>();
+		Pies mojPies2 = new Pies();
+		mojaListaPsow2.add(mojPies);
+		
+	}
+
+}

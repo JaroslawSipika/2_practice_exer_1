@@ -1,0 +1,29 @@
+
+class CPole {
+	
+	int obliczPole(int wysokosc, int szerokosc) {
+		return wysokosc * szerokosc;
+	}
+	
+	
+}
+
+
+
+
+
+public class Pole {
+
+	public static void main(String[] args) {
+		
+		
+		CPole pol = new CPole();
+		
+		
+		int a = pol.obliczPole(7,12);
+		
+		System.out.println(a);
+
+	}
+
+}
